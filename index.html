@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="#" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geotechnical Engineering and Technology Laboratory (GETLAB) Ltd</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body class="bg-white dark:bg-black text-gray-400 min-h-screen relative sm:text-base">
+    <div id="root"></div>
+    
+    <script type="module" src="/js/main.js"></script>
+  
+    <header class="sticky top-0 left-0 w-full z-50 bg-black text-white px-10 py-3 border-b border-dotted border-gray-400/40">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo -->
+        <div class="flex items-center space-x-8">
+          <a href="index.html"><img src="img/logo-on-dark.webp" alt="logo" class="h-7 w-auto" /></a>
+          <nav class="flex space-x-3 hidden md:block">
+              <a href="/" class="nav-link hover:text-gray-300">Home</a>
+              <a href="/about.html" class="nav-link hover:text-gray-300">About</a>
+              
+              <a href="/services.html" class="nav-link hover:text-gray-300">Services</a>
+             
+              <a href="/projects.html" class="nav-link hover:text-gray-300">Projects</a>
+          </nav>
+        </div>
+
+      <!-- Right Navigation Links -->
+      <div class="flex space-x-3">
+        <!--<a href="#" class="hover:text-gray-300">Get a Quote</a>-->
+          <a href="#"><button class="flex items-center justify-center border-gray-900 gap-1 border-1 px-2 hover:bg-[#303030]">   
+            <!--<svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+    </svg>
+    <span>Add Item</span> -->  
+            Get a Quotation
+            <span class="text-white font-bold rounded p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+            </button> 
+          </a>  
+        <button id="menuToggle" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay dropdown -->
+  <div id="mobileMenu" class="fixed inset-0 bg-black/60 z-51 hidden">
+    <div class="bg-black text-white p-6 space-y-3 h-full w-[70%] text-lg left-0 border-r border-dotted border-gray-400/40">
+      <a href="#" class="block hover:text-gray-300">Home</a>
+      <a href="#" class="block hover:text-gray-300">About</a>
+      <a href="#" class="block hover:text-gray-300">Services</a>
+      <!--<hr class="border-gray-600">-->
+      <button class="border-gray-900 border-1 py-1 px-2 rounded-lg">
+        <a href="#" class="block hover:text-gray-300">Get a Quote</a></button>
+    </div>
+  </div><!--End of mobile dropdown-->
+
+  <!-- Hero section -->
+  <section class="relative h-134 w-full">
+    <!-- Image -->
+    <div class="absolute inset-0 bg-[url('/img/getlab-premises.jpg')] bg-cover bg-center"></div>
+    <!-- Overlay -->
+    <!--<div class="absolute inset-0 bg-gray bg-opacity-90 z-0"></div>
+    Gradient -->
+    <!--<div class="absolute inset-0 bg-gradient-to-r from-black to-transparent dark:from-black/99 z-10"></div>-->
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-gray to-transparent dark:from-black/99"></div>
+  
+
+    <!-- Content of hero section-->
+    <!--<div class="relative z-10 h-full py-15 px-20 flex items-center text-white">-->
+    <div class="relative z-10 flex items-center h-100 px-8 md:px-20">
+      <div class="text-white max-w-2xl">
+        <h1 class="mt-13 text-4xl md:text-5xl font-bold leading-tight">
+          YOUR <span class="text-[#14953D]">RELIABLE</span><br />
+          GEOTECHNICAL<br />
+          ENGINEERING LABORATORY
+        </h1>
+        <p class="mt-6 text-lg">With modern, fully equipped facilities, we handle projects of any scale. Our team is defined by relentless focus, fast execution, and a deep commitment to quality.</p>
+          <a href="#" class="inline-flex items-center mt-8 px-6 py-1 bg-[#14953D] text-black/50 font-semibold shadow hover:bg-[#14953D]-700 transition">
+            Get a quotation
+             <span class="flex font-semibold rounded p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section><!-- End of hero section-->
+  
+  <!--<div class="h-134 w-full bg-[url(/img/1.jpg)] bg-cover bg-center relative bg-gradient-to-r from-black to-transparent">
+    <div class="absolute inset-0 flex items-center justify-center text-white">
+      <h2 class="text-2xl font-bold">Your Text Here</h2>
+    </div>
+  </div>-->
+
+  <!--Statistics section-->
+  <section class="relative h-full py-8 container mx-auto px-8 md:px-20 bg-[#121212]">
+    <!--px-4 sm:px-6 md:px-10--sm:px-8 md:px-12 lg:px-16-->
+    <div class="relative items-center justify-center">
+      <h1 class="text-4xl text-white font-bold">Committed to <span class="text-[#14953D]">excellence</span> since <span class="text-[#14953D]">2014</span></h1>
+      <p class="text-gray-400 mt-2">Geotechnical Engineering and Technology Laboratory (GETLAB) Limited delivers a comprehensive range of high-quality material testing services designed to support civil infrastructure projects.</p>
+      <div class="flex flex-col md:flex-row gap-4 mt-6 mb-6">
+        <div class="h-40 w-100 rounded-[30px] bg-black bg-grid">
+          <h1 class="text-white font-bold text-6xl pt-4 px-4">1550+</h1>
+          <p class="pt-4 px-4 text-lg">Approved projects</p>
+        </div>
+        <div class="h-40 w-100 rounded-[30px] bg-black bg-grid">
+          <h1 class="text-white font-bold text-6xl pt-4 px-4">10+</h1>
+          <p class="pt-4 px-4 text-lg">Years of experience</p>
+        </div>
+        <div class="h-40 w-100 rounded-[30px] bg-black bg-grid">
+          <h1 class="text-white font-bold text-6xl pt-4 px-4">100+</h1>
+          <p class="pt-4 px-4 text-lg">Returning customers</p>
+        </div>
+        <div class="h-40 w-100 rounded-[30px] bg-black bg-grid">
+          <h1 class="text-white font-bold text-6xl pt-4 px-4">Certified</h1>
+          <p class="pt-4 px-4 text-lg">ISO/IEC 17025 (KENAS)</p>
+        </div>
+        
+      </div>
+    </div>
+
+  </section><!--End of statistics section-->
+
+  <!-- Services sections -->
+  <section class="relative text-white ">
+    <div class="bg-black py-8 px-8 md:px-20 border-t border-dashed border-gray-400/40">
+      <h1 class="text-4xl font-bold">Our Services</h1>
+    </div>
+    <div class="relative bg-cover bg-center" style="background-image: url('/img/eacop-pipeline.jpeg');">
+      <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent dark:from-black/98"></div>
+      <div class="absolute inset-0 bg-gray bg-opacity-70"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-8 py-4 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex flex-col justify-center">
+          <h2 class="text-2xl md:text-2xl font-bold leading-snug mb-2">We deliver a wide range of <br />
+            materials testing services to support civil infrastructure projects</h2>
+        </div>
+        <!-- Right grid (services) -->
+        <div class="grid grid-cols-2 gap-4 mt-13 mb-13">
+          <a href="soil-testing.html" class="hover:bg-[#14953D]/80">
+          <div class="h-30 text-2xl flex items-center justify-center bg-[#14953D]/20 text-white font-bold uppercase">
+            Soil Testing</div></a> 
+          <a href="#" class="hover:bg-gray-400">
+          <div class="h-30 text-2xl flex items-center justify-center bg-white/20 text-center font-bold uppercase">Asphalt Testing</div>
+          </a>  
+          <div class="h-30 text-2xl flex items-center justify-center bg-white/30 text-center font-bold uppercase">Concrete & Aggregate Testing</div>
+          <div class="h-30 text-2xl flex items-center justify-center bg-white/20 text-center font-bold uppercase">Chemical Testing</div>
+          <div class="h-30 text-2xl flex items-center justify-center bg-white/30 text-center font-bold uppercase">Geotechnical Investigations</div>
+          <div class="h-30 text-2xl flex items-center justify-center bg-white/20 text-center font-bold uppercase">Geophysical Investigations</div>
+        </div>
+      </div>
+    </div>
+  
+  </section><!-- End of services' section-->
+
+  <!-- Projects section-->
+  <section class="relative text-white container bg-[#121212]">
+    <div class="py-8 px-8 md:px-20">
+      <h1 class="text-4xl font-bold">Areas of expertise</h1>
+    </div>
+    <div class="grid grid-cols-1 px-8 sm:grid-cols-2 lg:grid-cols-3 md:px-20 gap-2">
+     <!-- Pipelines -->
+    <a href="#" class="group relative h-[400px] overflow-hidden shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/eacop-pipeline.jpeg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent dark:from-black/50 z-10"></div>
+      
+      <!-- Title and Icon -->
+     <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Pipelines</span>
+          <div class="p-2 border border-white">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+    </svg>
+
+      </div>
+    </div>
+    </a>
+
+    <a href="#" class="group relative h-[400px] overflow-hidden shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/soil-testing-5.jpeg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent dark:from-black/70"></div>
+      
+      <!-- Title and Icon -->
+      <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Roads</span>
+          <div class="p-2 border border-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+      </div>
+    </a>
+
+  <a href="#" class="group relative h-[400px] overflow-hidden shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/dams.jpg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent dark:from-black/70" z-10></div>
+      
+      <!-- Title and Icon -->
+     <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Dams</span>
+          <div class="p-2 border border-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      </div>
+    </div>
+    </a>
+
+  <a href="#" class="group relative h-[400px] overflow-hidden col-span-3 shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/soil-testing-5.jpeg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      
+      <!-- Title and Icon -->
+     <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Bridges</span>
+          <div class="p-2 border border-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      </div>
+    </div>
+    </a>
+
+   <a href="#" class="group relative h-[400px] overflow-hidden shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/soil-testing-5.jpeg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      
+      <!-- Title and Icon -->
+     <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Substations</span>
+          <div class="p-2 border border-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      </div>
+    </div>
+    </a>
+
+
+     <a href="#" class="group relative h-[400px] overflow-hidden shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/soil-testing-5.jpeg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      
+      <!-- Title and Icon -->
+     <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Buildings</span>
+          <div class="p-2 border border-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      </div>
+    </div>
+    </a>
+
+
+  <a href="#" class="group relative h-[400px] overflow-hidden shadow-lg block">
+      <!-- Background Image -->
+      <div class="absolute inset-0 bg-[url('/img/soil-testing-5.jpeg')] bg-cover bg-center transition-transform duration-500 group-hover:scale-110"></div>
+      
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
+      
+      <!-- Title and Icon -->
+     <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+        <span class="text-lg font-semibold">Transmission lines</span>
+          <div class="p-2 border border-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+      </div>
+    </div>
+    </a>
+
+  <!--<div class="bg-blue-100 shadow rounded-lg p-6 col-span-3 h-72">
+    
+  </div>-->
+
+  </div>
+    
+  </section><!-- End of projects section -->
+
+  <!-- Customer Section -->
+  <section class="bg-black py-10 overflow-hidden relative">
+    <div class="justify-center items-center:px-20 mt-1">
+      <p class="text-center">Trusted by 50+ customers</p>
+    </div>
+    <!-- Left gradient mask -->
+  <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black to-transparent z-10"></div>
+
+  <!-- Right gradient mask -->
+  <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black to-transparent z-10"></div>
+    <div class="whitespace-nowrap animate-slide flex gap-16">
+      <img src="/img/peclogo3.png" alt="Client 1" class="h-12 grayscale opacity-100 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 2" class="h-12 grayscale opacity-100 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 3" class="h-12 grayscale opacity-100 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 4" class="h-12 grayscale opacity-100 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 1" class="h-12 grayscale opacity-100 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 2" class="h-12 grayscale opacity-100 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 3" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 4" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 1" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 2" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 3" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 1" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 2" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 3" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 4" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+      <img src="/img/peclogo3.png" alt="Client 4" class="h-12 grayscale opacity-60 hover:opacity-100 transition duration-300" />
+    </div>
+  </section>
+
+
+<!-- Footer section -->
+  <footer class="bg-black px-8 py-10 md:px-20">
+    <div class="flex flex-col lg:flex-row justify-between gap-10">
+      <!-- Left Section -->
+      <div class="flex-1">
+        <!--<img src="/img/logo-on-dark.webp" alt="logo" class="mb-4">-->
+        <a href="index.html"><img src="img/logo-on-dark.webp" alt="logo" class="h-9 w-auto mb-4" /></a>
+        <div class="flex gap-4">
+          <!-- Social Icons -->
+          <a href="#"><img src="/x-icon.svg" alt="X"></a>
+          <a href="#"><img src="/facebook-icon.svg" alt="Facebook"></a>
+          <a href="#"><img src="/linkedin-icon.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+
+      <!-- Center Section -->
+      <div class="flex-1">
+        <h2 class="text-white">Geotechnical Engineering and Technology Laboratory (GETLAB)</h2>
+        <p>Plot 1234, Block 197, Namirembe Hillside Road, Kitetika Cell<br>Kasangati Town Council, Wakiso, Uganda</p>
+        <p class="mt-2">+256 (0) 392 175 883<br>info@getlab.co.ug</p>
+      </div>
+
+      
+      <div class="flex-1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.716709934078!2d32.587741673576765!3d0.4089131638805127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbc952b3a8f1%3A0xb6a5c2eaeb42c184!2sGETLAB%20LTD!5e0!3m2!1sen!2sug!4v1754395067576!5m2!1sen!2sug" width="500" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- Right Section -->
+        <!--<iframe
+          src="https://www.google.com/maps/embed?pb=YOUR_UGANDA_LOCATION"
+          width="100%"
+          height="200"
+          loading="lazy"
+          style="border:0;"
+          allowfullscreen
+        ></iframe>-->
+      </div>
+    </div>
+
+    <hr class="mt-15 mb-8 border-gray-900">
+    <div class="text-left">&copy; 2025 <strong>GETLAB</strong></div>
+
+    <!-- Back to Top -->
+    <a href="#top" class="fixed bottom-5 right-5 bg-white text-green-600 p-2 rounded-full shadow-lg">
+      ↑
+    </a>
+  </footer>
+  
+  </body>
+</html>
